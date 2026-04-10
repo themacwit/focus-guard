@@ -2,7 +2,7 @@
 
 Developed a cure to the brainrot virus epidemic.
 
-Block Instagram Reels and the X feed.
+Block Instagram Reels and the feed on X.
 
 But keep DMs, profiles, and notifications.
 
