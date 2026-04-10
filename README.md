@@ -1,27 +1,16 @@
 # FocusGuard
 
-A Chrome extension that blocks Reels, algorithmic feeds, and video tabs on Instagram and X/Twitter.
+Chrome extension that blocks Reels on Instagram and the algorithmic feed on X/Twitter so you stop doomscrolling.
 
-## Features
+**What it blocks:**
+- Instagram: the entire `/reels` page + Reels injected into your main feed
+- X/Twitter: Home timeline, Explore/trending, video tabs
 
-- **Block Instagram Reels** — replaces the `/reels` page with a blocking screen and hides Reel posts injected into the main feed
-- **Block X/Twitter Feed** — blocks the Home timeline (`/home`), Explore/trending (`/explore`), and video tabs (`/*/video`)
-- **Live toggle** — flip blocking on or off from the popup without reloading the page
-- **SPA-aware** — detects client-side navigations via history API intercepts and MutationObservers
-- **Minimal footprint** — no frameworks, no build step, no background service worker, no network requests
+DMs, notifications, profiles, and individual posts are left alone.
 
-## Install (unpacked)
-
-1. Clone or download this repository
-2. Open `chrome://extensions` in Chrome
-3. Enable **Developer mode** (top-right toggle)
-4. Click **Load unpacked** and select the `focus-guard` directory
-5. The FocusGuard icon appears in the toolbar — click it to toggle blocking
-
-## Permissions
-
-| Permission | Why |
-|------------|-----|
-| `storage`  | Persist toggle state across sessions via `chrome.storage.sync` |
-
-No host permissions are requested beyond the content script match patterns (`instagram.com`, `x.com`, `twitter.com`), which are required to inject the blocking logic.
+**Install:**
+1. Clone this repo
+2. Go to `chrome://extensions`
+3. Turn on Developer mode
+4. Click "Load unpacked" and pick this folder
+5. Click the shield icon to toggle blocking on/off
